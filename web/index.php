@@ -20,6 +20,7 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), [
 ]);
 
 // Creating a table if it doesn't exist yet
+//juhul kui ei ole tabelit siis luuakse ...
 if (!$app['db']->getSchemaManager()->tablesExist('bookings')) {
     $app['db']->executeQuery("CREATE TABLE bookings (
         id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
