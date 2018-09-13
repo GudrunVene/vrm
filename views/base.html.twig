@@ -7,21 +7,19 @@
        <title>I-Smith</title>
         <link rel="stylesheet" type="text/css" media="screen" href="/css/normalize.css">
         <link rel="stylesheet" type="text/css" media="screen" href="/css/base.css"><!--lisatud stiililehed -->
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/header.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/css/footer.css"><!--lisatud header ja footer eraldi -->
+
 
     </head>
     <body>
-      <div class="header">
-            <img src="/images/notebook.svg" class="header__pic"/>
-            <span class="header__heading">
-                Hotel I-Smith
-            </span>
-        </div>
+      {{ include('_header.html.twig') }}
+      <!--lisatud header osa -->
+
         <div class="content"></div>
-        <div class="footer">
-            <div class="footer__text">
-                Created by I-Sepp OÜ - <a href="http://i-smith.ee/">www.i-smith.ee</a>
-            </div>
-        </div>
+       {{ include('_footer.html.twig') }}
+        <!--lisatud footer osa -->
+
 
     </body>
 </html>
